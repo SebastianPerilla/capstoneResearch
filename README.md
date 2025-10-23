@@ -1,5 +1,5 @@
 
-Summary of **Dimensionality Reduction (DR)**  literature review, highlighting critical paint points, algorithmic weaknesses, and potential directions for future research.
+Summary of **Dimensionality Reduction (DR)**  literature review, highlighting critical pain points, algorithmic weaknesses, and potential directions for future research.
 
 ### Three Main Goals:
 - Find a way to make a new (hopefully better) algorithm
@@ -22,7 +22,7 @@ A core issue between balancing local and global manifold preservation.
 
 ## 2. Theoretical/Optimization Weaknesses
 
-Nonlinear Dimenstionality Reduciton methods suffer from both theoretical and numerical limitations.
+Nonlinear Dimenstionality Reduction methods suffer from both theoretical and numerical limitations.
 
 #### A. Objective Function Flaws
 - Sparse spectral methods (e.g., **LLE**, **Laplacian Eigenmaps**, **HLLE**, **LTSA**) can produce "trivial solutions" (all embeddings collapse to zero).  
@@ -31,7 +31,7 @@ Nonlinear Dimenstionality Reduciton methods suffer from both theoretical and num
 > **Potential Area to Explore:** Design cost functions whose resultant minimum is "non-trivial". Check this out in more depth: [Knowledge Learning-Based Dimensionality Reduction for Solving Large-Scale Sparse Multiobjective Optimization Problems](https://ieeexplore.ieee.org/abstract/document/10969804)
 
 #### B. Numerical Instability
-- Spectral methods (those that rely on eigen-decomposition of some matrix) rely on finding very small nonzero eigenvalues, which are numerically unstable and difficult for modern eigensolvers to separate from zero.
+- Spectral methods (those that rely on eigen-decomposition of some matrix) rely on finding very small non-zero eigenvalues, which are numerically unstable and difficult for modern eigensolvers to separate from zero.
 
 #### C. Distance Retention Bias
 Convex Dimensionality Reduction methods inherently favor large pairwise distances, forgetting about the small distances critical for local geometry.
@@ -90,7 +90,7 @@ Dimensionality reduction challenges:
 
 ### The Path Forward
 Progress probably will go in the direction of **hybrid, deep-learning-inspired approaches** that unify:
-- Physics inspired Approach: [A Survey on Design-Space Dimensionality Reduction Methods for Shape Optimization](https://link.springer.com/article/10.1007/s11831-025-10349-x)
+- Physics-inspired Approach: [A Survey on Design-Space Dimensionality Reduction Methods for Shape Optimization](https://link.springer.com/article/10.1007/s11831-025-10349-x)
 - Local and global objectives  
 - Robust optimization  
 - Scalable computation  
@@ -98,7 +98,7 @@ Progress probably will go in the direction of **hybrid, deep-learning-inspired a
 
 Next Steps for me:
 - Test out the important metrics
-- Further Research on the Computation/Scaleability Potential of these algorithms
+- Further research on the Computation/Scalability Potential of these algorithms
 - Look for more "inspiring approaches"
 - Focus on obtaining some dataset that this can be tested on, one with random noise from financial markets
 
